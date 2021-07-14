@@ -1,0 +1,56 @@
+1) POST localhost:4000/users
+
+request:
+{
+    "username":"Rifa",
+    "password":"Rifa12"
+}
+
+response:
+{
+    "success": false,
+    "message":"username not found"
+}
+
+2) DELETE localhost:4000/users
+
+request:
+{
+    "username":"Rifa"
+    "password":"Rifa12"
+}
+
+response:
+{
+    "success":true,
+    "message":"user deleted"
+}
+
+3) GET localhost:4000/users
+
+request:
+{
+    "username":"Rifa"
+    "password":"Rifa12"
+}
+
+response:
+{
+    "success":true,
+    "message":"user created"
+}
+
+4) UPDATE localhost:4000/users
+
+request:
+{
+    "username":"Rifa",
+    "password":"Rifa12",
+    "newpassword":"Rifa32"
+}
+
+response:
+{
+    "success":true,
+    "message":"password changed for user"
+}
